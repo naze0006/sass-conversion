@@ -52,3 +52,25 @@
     line-height: 6.3968rem;
 }
 
+
+// ----------- extend --------------
+.padding-extend{
+    padding:2rem 0;
+}
+
+.width-margin{
+    width: 400px;
+    margin: 0 auto;
+}
+
+
+.beforeafter{
+        content:"";
+        position:absolute;
+        bottom:-1rem;
+        width:30%;
+        height:1rem;
+}
+
+
+

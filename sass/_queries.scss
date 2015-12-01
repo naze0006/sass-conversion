@@ -333,7 +333,6 @@ footer{
 
 .col-4{
         @include mobile{
-            //width:50%;
             float:left;
             @include createCols(4, 0%, 200%);
     }

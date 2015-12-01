@@ -1,3 +1,9 @@
+.padding-extend, section.content2, footer { padding: 2rem 0; }
+
+.width-margin, header, section .focal { width: 400px; margin: 0 auto; }
+
+.beforeafter, .bg-header:before, .bg-header:after { content: ""; position: absolute; bottom: -1rem; width: 30%; height: 1rem; }
+
 /*********************************************** DEFAULTS
 ***********************************************/
 * { padding: 0; margin: 0; -webkit-box-sizing: border-box; box-sizing: border-box; }
@@ -16,8 +22,8 @@ ul { list-style: none; }
 /*********************************************** LAYOUT 
 ***********************************************/
 .bg-header { background-color: #fff; background-color: #C7F7FF; color: #222; border-bottom: 1rem solid #89C0C9; border-top: 1rem solid #3a5E63; position: relative; }
-.bg-header:before { content: ""; position: absolute; bottom: -1rem; width: 30%; height: 1rem; background-color: #3a5E63; left: 0; }
-.bg-header:after { content: ""; position: absolute; bottom: -1rem; width: 30%; height: 1rem; background-color: #3a5E63; right: 0; }
+.bg-header:before { background-color: #3a5E63; left: 0; }
+.bg-header:after { background-color: #3a5E63; right: 0; }
 
 .bg-focal { background-color: #C9A689; color: #7C593C; }
 
@@ -27,22 +33,17 @@ ul { list-style: none; }
 
 .bg-footer { background-color: #fff; color: #d4d4d4; }
 
-header { width: 400px; /* default */ margin: 0 auto; position: relative; }
+header { position: relative; }
 header h1 { width: 100%; padding: 0 2rem; }
 header nav { width: 100%; }
 header nav ul li { width: 100%; float: none; }
 
-section .focal { width: 400px; /* default */ margin: 0 auto; }
-
 section .content1 { padding: 2rem 0; }
-
-section.content2 { padding: 2rem 0; }
 
 .row { clear: both; }
 
 .col-2 { width: 50%; float: left; padding-bottom: 2rem; border-left: 1px solid #3a5E63; margin-bottom: 2rem; }
 
-footer { padding: 2rem 0; }
 footer .col-2:first-child { border-left: 0; }
 
 /*********************************************** NAVIGATION 

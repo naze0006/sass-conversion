@@ -45,22 +45,14 @@ ul{
     position: relative;
     
     &:before{
-        content:"";
-        position:absolute;
-        bottom:-1rem;
-        width:30%;
-        height:1rem;
         background-color: $color_dark_blue;
-        left:0;  
+        left:0; 
+        @extend .beforeafter;
     }
     &:after{
-        content:"";
-        position:absolute;
-        bottom:-1rem;
-        width:30%;
-        height:1rem;
         background-color: $color_dark_blue;
         right:0;
+        @extend .beforeafter;
     }
     
 }
@@ -85,8 +77,7 @@ ul{
 
 
 header{
-    width: 400px; /* default */
-    margin: 0 auto;
+    @extend .width-margin;
     position: relative;
     
     h1{
@@ -110,8 +101,7 @@ header{
 
 section{
     .focal{
-    width: 400px; /* default */
-    margin: 0 auto;
+    @extend .width-margin;
     }
 }
 
@@ -121,7 +111,7 @@ section{
     }
 }
 section.content2{
-    padding:2rem 0;    
+    @extend .padding-extend;    
 }
 
 .row{
@@ -136,7 +126,7 @@ section.content2{
 }
 
 footer{
-    padding:2rem 0;
+    @extend .padding-extend;
     .col-2:first-child{
         border-left: 0;
     }
