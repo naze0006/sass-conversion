@@ -14,8 +14,8 @@ header{
     @include mobile{
             width: 700px;
             margin: 0 auto;
-            min-height: 8rem;}
-    
+            min-height: 8rem;} 
+     
     @include tablet{
             width: 900px;
             margin: 0 auto;}
@@ -38,61 +38,37 @@ header{
             color: #7C593C;}
         
         i.fa-lg{
-        @include mobile{
-            color: #7C593C;
-            /*display:inline;
-            color: #7C593C;
-            vertical-align:baseline;
-            float:none;
-            font-size: 4rem;
-            line-height: 6.3968rem;*/
-            @include fa-lg;
-            }
+            @include mobile{
+                color: #7C593C;
+                @include fa-lg;
+                }
             
-            @include tablet{
-            color: #3a5E63;
-            /*display:inline;
-            vertical-align:baseline;
-            float:none;
-            font-size: 4rem;
-            line-height: 6.3968rem;*/
-            @include fa-lg;
-            }
-            
-            @include desktop{
-            color: #7C593C;
-            /*display:inline;
-            vertical-align:baseline;
-            float:none;
-            font-size: 4rem;
-            line-height: 6.3968rem;*/
-            @include fa-lg;
-            }
+                @include tablet{
+                color: #3a5E63;
+                @include fa-lg;
+                }
+
+                @include desktop{
+                color: #7C593C;
+                @include fa-lg;
+                }
+           
             
             ~ span{
             @include mobile{
                 float: none;
                 letter-spacing: 0.25rem;
                 font-size: 3.998rem;
-                /**
-                1 lines of 3.998 * 1.6 = 6.3968
-                **/
                 text-align: left;}
             @include tablet{
                 float: none;
                 letter-spacing: 0.25rem;
                 font-size: 3.998rem;
-                /**
-                1 lines of 3.998 * 1.6 = 6.3968
-                **/
                 text-align: left;}
             @include desktop{
                 float: none;
                 letter-spacing: 0.25rem;
                 font-size: 3.998rem;
-                /**
-                1 lines of 3.998 * 1.6 = 6.3968
-                **/
                 text-align: left;}
              }
         }
