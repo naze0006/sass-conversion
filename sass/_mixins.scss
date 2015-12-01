@@ -1,0 +1,54 @@
+// ----------- CLEARFIX --------------
+@mixin clearfix{
+    .clearfix{
+        &:after{
+        display:table;
+        clear: both;
+        content: ""; 
+    }
+}
+}
+
+// ----------- MEDIA QUERIES ----------
+
+@mixin mobile {    
+  @media (min-width: #{$breakpoint-mobile}) and (max-width: #{$breakpoint-tablet - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$breakpoint-tablet}) and (max-width: #{$breakpoint-desktop - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$breakpoint-desktop}) {
+    @content;
+  }
+}
+
+
+// ----------- COLUMN WIDTH CALCULATOR ------------
+@mixin createCols($num_of_cols, $spacing, $width){
+  width: ( $width - ( $spacing * ($num_of_cols - 1) ) ) / $num_of_cols;
+  margin-left: $spacing;
+  // Remove Spacing from First Child
+  &:first-child{
+    margin-left: 0;
+  }
+}
+
+
+// ----------- fa-lg ---------------
+
+@mixin fa-lg{
+    display:inline;
+    color: #7C593C;
+    vertical-align:baseline;
+    float:none;
+    font-size: 4rem;
+    line-height: 6.3968rem;
+}
+
